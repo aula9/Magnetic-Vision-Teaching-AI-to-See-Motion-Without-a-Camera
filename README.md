@@ -125,9 +125,10 @@ to dataset/<CLASS>/.
 
 ## Repository Structure
 
-```
 firmware/        Arduino sketches (data collection + inference)
 pc_tools/        Python logger for dataset collection
+
+## Full Write-up
 
 ```bash
 https://www.hackster.io/aula-jazmati/magnetic-vision-teaching-ai-to-see-motion-without-a-camera-e76650
