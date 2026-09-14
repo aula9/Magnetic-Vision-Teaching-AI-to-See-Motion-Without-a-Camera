@@ -127,6 +127,7 @@ to dataset/<CLASS>/.
 
 firmware/        Arduino sketches (data collection + inference)
 pc_tools/        Python logger for dataset collection
+dataset/         Collected CSV recordings (organized by class)
 
 ## Full Write-up
 
