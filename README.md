@@ -203,7 +203,9 @@ Magnetic-Vision-Teaching-AI-to-See-Motion-Without-a-Camera/
 
 ## Future Work
 Multi-axis sensing: Use 3-axis magnetometers to capture richer magnetic signatures.
+
 Directional detection: Add a second Hall-effect sensor to detect motion direction.
+
 Larger datasets: Vary magnet size, orientation, speed, and distance to test generalization.
 
 ## Credits
