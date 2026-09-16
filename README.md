@@ -57,11 +57,11 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 
 ![Wio Terminal ports](images/wio_ports.jpg)
 ![Wio Terminal buttons](images/wio_buttons.jpg)
-![Magnetic Power Kit](images/magnetic_kit.jpg)
+![Magnetic Power Kit](images/magnetic_kit.png)
 
 ![A1302 Sensor](images/a1302_sensor.jpg)
 
-![A1302 Sensor Pins](images/sensor_pins.jpg)
+![A1302 Sensor Pins](images/sensor_pins.png)
 ![Wiring setup](images/wiring_diagram.jpg)
 
 ### Wiring Diagram
@@ -83,7 +83,7 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 
 ### Data Collection
 
-![Python Logger Console](images/pc_logger.jpg)
+![Python Logger Console](images/pc_logger.png)
 
 ### Impulse Design
 
@@ -96,9 +96,9 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 
 ### Signal Examples
 
-![FAST raw signal](images/exp1_signal_fast.jpg)
-![NO_CAR signal](images/exp1_signal_no_car.jpg)
-![SLOW signal](images/exp1_signal_slow.jpg)
+![FAST raw signal](images/exp1_signal_fast.png)
+![NO_CAR signal](images/exp1_signal_no_car.png)
+![SLOW signal](images/exp1_signal_slow.png)
 
 ### Signal Comparison
 
@@ -123,16 +123,16 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 - Test accuracy: **100%**
 - Dataset: 10 recordings per class (30 total) → 90 windows
 
-![Training Results](images/exp1_training_results.jpg)
-![Test Results](images/exp1_test_results.jpg)
+![Training Results](images/exp1_training_results.png)
+![Test Results](images/exp1_test_results.png)
 
 ### On-Device Inference
 
-![Serial Monitor - FAST 98.44%](images/exp1_inference_fast.jpg)
+![Serial Monitor - FAST 98.44%](images/exp1_inference_fast.png)
 
 ### Deployment
 
-![Deployment Success](images/deployment_success.jpg)
+![Deployment Success](images/deployment_success.png)
 
 ![Data collection - FAST class](images/exp1_data_collection.jpg)
 ![Inference - NO_CAR](images/exp1_inference_no_car.jpg)
@@ -289,7 +289,7 @@ python pc_tools/logger.py
 4. Press B1 on the Wio Terminal; the data will be saved automatically
 to dataset/<CLASS>/.
 
-![Python Logger Console](images/pc_logger.jpg)
+![Python Logger Console](images/pc_logger..png)
 
 ## Repository Structure
 ```
