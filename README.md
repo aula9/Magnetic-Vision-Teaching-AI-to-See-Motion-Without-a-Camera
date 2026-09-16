@@ -176,7 +176,7 @@ python pc_tools/logger.py
 to dataset/<CLASS>/.
 
 ## Repository Structure
-Magnetic-Vision/
+Magnetic-Vision-Teaching-AI-to-See-Motion-Without-a-Camera/
 │
 ├── firmware/              Arduino sketches
 │   ├── experiment1_speed/      (FAST / SLOW / NO_CAR)
