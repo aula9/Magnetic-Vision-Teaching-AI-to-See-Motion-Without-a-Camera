@@ -165,10 +165,10 @@ amplitude-based statistics are insufficient for temporal pattern recognition.
 
 If you want to collect your own dataset:
 
-```markdown
 1. Install Python 3 and `pyserial`:
    ```bash
    pip install pyserial
+   ```
 2. Edit SERIAL_PORT in pc_tools/logger.py to match your COM port.
 3. Run:
 python pc_tools/logger.py
@@ -200,6 +200,6 @@ Magnetic-Vision-Teaching-AI-to-See-Motion-Without-a-Camera/
 | 2 | Pattern classification | 1D CNN on Raw Data | 76.3% | 66.67% |
 
 ## Full Write-up
-```markdown
+
 [View the complete project on Hackster](https://www.hackster.io/aula-jazmati/magnetic-vision-teaching-ai-to-see-motion-without-a-camera-e76650)
-```bash
+
