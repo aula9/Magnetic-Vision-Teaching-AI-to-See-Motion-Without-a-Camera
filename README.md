@@ -92,13 +92,13 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 - **Processing block**: Flatten (extracts 7 statistical features)
 - **Learning block**: Classification (Keras)
 
-![Impulse Design](images/exp1_impulse_design.jpg)
+![Impulse Design](images/exp1_impulse_design.png)
 
 ### Signal Examples
 
-![FAST raw signal](images/exp1_signal_fast.png)
-![NO_CAR signal](images/exp1_signal_no_car.png)
-![SLOW signal](images/exp1_signal_slow.png)
+![FAST raw signal](images/exp1_raw_signal_fast.png)
+![NO_CAR signal](images/exp1_dataset_no_car.png)
+![SLOW signal](images/exp1_dataset_slow.png)
 
 ### Signal Comparison
 
@@ -149,7 +149,7 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 - 
 ### Data Collection
 
-![Signal grid - all classes](images/exp2_signals_grid.png)
+![Signal grid - all classes](images/exp2_signals_comparison.png)
 
 Each recording lasts 3 seconds (300 samples at 100 Hz). Below are 
 examples of each class:
@@ -289,7 +289,7 @@ python pc_tools/logger.py
 4. Press B1 on the Wio Terminal; the data will be saved automatically
 to dataset/<CLASS>/.
 
-![Python Logger Console](images/pc_logger..png)
+![Python Logger Console](images/pc_logger.png)
 
 ## Repository Structure
 ```
