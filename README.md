@@ -177,10 +177,20 @@ to dataset/<CLASS>/.
 
 ## Repository Structure
 Magnetic-Vision/
-├── firmware/                Arduino sketches (data collection + inference)
-├── pc_tools/                Python logger for dataset collection
-├── dataset/                 Collected CSV recordings (organized by class)
-└── README.md
+│
+├── firmware/              Arduino sketches
+│   ├── experiment1_speed/      (FAST / SLOW / NO_CAR)
+│   └── experiment2_patterns/   (STRAIGHT / OSCILLATE / PAUSE)
+│
+├── pc_tools/              Python scripts
+│   ├── logger.py               (receives CSV data via Serial)
+│   └── visualize.py            (plots time-series signals)
+│
+├── dataset/               Collected CSV recordings (organized by class)
+│
+├── images/                Project screenshots and diagrams
+│
+└── README.md              Project documentation
 
 ## Results Summary
 
