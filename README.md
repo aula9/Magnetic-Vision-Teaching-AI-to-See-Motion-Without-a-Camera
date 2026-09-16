@@ -6,6 +6,58 @@ on a Seeed Wio Terminal.
 
 ---
 
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Hardware Setup](#hardware-setup)
+3. [Experiment 1: Speed Classification](#experiment-1-speed-classification)
+4. [Experiment 2: Motion Pattern Classification](#experiment-2-motion-pattern-classification)
+5. [How to Deploy](#how-to-deploy)
+6. [Repository Structure](#repository-structure)
+7. [Results Summary](#results-summary)
+8. [Future Work](#future-work)
+9. [Credits](#credits)
+10. [Links](#links)
+
+---
+
+## Overview
+
+This project explores whether a simple **Hall-effect sensor** can capture
+enough information about a moving object for a machine-learning model to
+recognize its motion — **without any camera or computer vision**.
+
+It contains two experiments:
+- **Experiment 1**: Classify motion **speed** (FAST / SLOW / NO_CAR) —
+  achieved 100% accuracy using the Flatten processing block.
+- **Experiment 2**: Classify motion **patterns** (STRAIGHT / OSCILLATE / PAUSE) —
+  achieved 76.3% validation accuracy using a 1D CNN on raw signals.
+
+**Key finding**: Statistical features (Flatten) work well for amplitude-based
+problems, but temporal patterns require more sophisticated modeling (1D CNN).
+
+---
+## Hardware Setup
+
+### Components
+
+| Component | Quantity | Notes |
+|---|---|---|
+| Seeed Studio Wio Terminal | 1 | ARM Cortex-M4F, built-in LCD |
+| A1302 Linear Hall-Effect Sensor | 1 | Analog output |
+| Magnetic toy car | 1 | Any magnet works |
+| Jumper wires | 3 | For sensor connection |
+
+### Wiring Diagram
+
+| A1302 Pin | Wio Terminal Pin | Notes |
+|---|---|---|
+| VCC | 3.3V | Wider ADC dynamic range |
+| GND | GND | Common ground |
+| VOUT | A0 (Pin 13) | Analog magnetic field strength |
+
+---
+
 ## Experiment 1: Speed Classification
 
 ### Classes
@@ -113,10 +165,10 @@ amplitude-based statistics are insufficient for temporal pattern recognition.
 
 If you want to collect your own dataset:
 
+```markdown
 1. Install Python 3 and `pyserial`:
-```bash
-pip install pyserial
-````
+   ```bash
+   pip install pyserial
 2. Edit SERIAL_PORT in pc_tools/logger.py to match your COM port.
 3. Run:
 python pc_tools/logger.py
@@ -124,13 +176,21 @@ python pc_tools/logger.py
 to dataset/<CLASS>/.
 
 ## Repository Structure
+Magnetic-Vision/
+├── firmware/                Arduino sketches (data collection + inference)
+├── pc_tools/                Python logger for dataset collection
+├── dataset/                 Collected CSV recordings (organized by class)
+└── README.md
 
-firmware/        Arduino sketches (data collection + inference)
-pc_tools/        Python logger for dataset collection
-dataset/         Collected CSV recordings (organized by class)
+## Results Summary
+
+| Experiment | Task | Method | Validation | Test |
+|---|---|---|---|---|
+| 1 | Speed classification | Flatten + Dense | 100% | 100% |
+| 2 | Pattern classification | 1D CNN on Raw Data | 76.3% | 66.67% |
 
 ## Full Write-up
+```markdown
+## Full Write-up
 
-```bash
-https://www.hackster.io/aula-jazmati/magnetic-vision-teaching-ai-to-see-motion-without-a-camera-e76650
-````
+[View the complete project on Hackster](https://www.hackster.io/aula-jazmati/magnetic-vision-teaching-ai-to-see-motion-without-a-camera-e76650)
