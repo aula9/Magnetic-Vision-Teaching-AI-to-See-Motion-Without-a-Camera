@@ -126,9 +126,6 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 ![Training Results](images/exp1_training_results.png)
 ![Test Results](images/exp1_test_results.png)
 
-### On-Device Inference
-
-![Serial Monitor - FAST 98.44%](images/exp1_inference_fast.png)
 
 ### Deployment
 
@@ -146,7 +143,7 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 - **STRAIGHT**: Steady movement in one direction.
 - **PAUSE**: Movement, brief pause, then continuation.
 - **OSCILLATE**: Back-and-forth movement within the window.
-- 
+  
 ### Data Collection
 
 ![Signal grid - all classes](images/exp2_signals_comparison.png)
