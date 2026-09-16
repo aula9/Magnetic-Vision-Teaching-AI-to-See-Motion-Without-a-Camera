@@ -176,6 +176,7 @@ python pc_tools/logger.py
 to dataset/<CLASS>/.
 
 ## Repository Structure
+```
 Magnetic-Vision-Teaching-AI-to-See-Motion-Without-a-Camera/
 │
 ├── firmware/              Arduino sketches
@@ -191,6 +192,7 @@ Magnetic-Vision-Teaching-AI-to-See-Motion-Without-a-Camera/
 ├── images/                Project screenshots and diagrams
 │
 └── README.md              Project documentation
+```
 
 ## Results Summary
 
@@ -198,6 +200,15 @@ Magnetic-Vision-Teaching-AI-to-See-Motion-Without-a-Camera/
 |---|---|---|---|---|
 | 1 | Speed classification | Flatten + Dense | 100% | 100% |
 | 2 | Pattern classification | 1D CNN on Raw Data | 76.3% | 66.67% |
+
+## Future Work
+Multi-axis sensing: Use 3-axis magnetometers to capture richer magnetic signatures.
+Directional detection: Add a second Hall-effect sensor to detect motion direction.
+Larger datasets: Vary magnet size, orientation, speed, and distance to test generalization.
+
+## Credits
+
+Author: Aula Jazmati Platform: Seeed Studio Wio Terminal ML Pipeline: Edge Impulse License: MIT
 
 ## Full Write-up
 
