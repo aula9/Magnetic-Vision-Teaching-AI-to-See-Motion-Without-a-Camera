@@ -3,7 +3,7 @@
 A TinyML project using a Hall-effect sensor and Edge Impulse to classify
 motion speed and patterns — no camera required. Runs entirely on-device
 on a Seeed Wio Terminal.
-
+![Two components. Zero cameras.](images/no_camera_drama.png)
 ---
 
 ## Table of Contents
@@ -27,13 +27,14 @@ This project explores whether a simple **Hall-effect sensor** can capture
 enough information about a moving object for a machine-learning model to
 recognize its motion — **without any camera or computer vision**.
 
-[Two components. Zero cameras.](images/no_camera_drama.jpg)
+![TinyML System Architecture](images/tinyml_architecture.jpg)
 
 It contains two experiments:
 - **Experiment 1**: Classify motion **speed** (FAST / SLOW / NO_CAR) —
   achieved 100% accuracy using the Flatten processing block.
 - **Experiment 2**: Classify motion **patterns** (STRAIGHT / OSCILLATE / PAUSE) —
   achieved 76.3% validation accuracy using a 1D CNN on raw signals.
+
 
 **Key finding**: Statistical features (Flatten) work well for amplitude-based
 problems, but temporal patterns require more sophisticated modeling (1D CNN).
