@@ -121,7 +121,19 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 amplitude-based statistics are insufficient for temporal pattern recognition.
 
 ---
+## Video Demos
 
+**Experiment 1: Speed Classification (FAST / SLOW / NO_CAR)**
+- [Live demo — take 1](https://www.youtube.com/shorts/AFlcssnsRv8?feature=share)
+- [Live demo — take 2](https://www.youtube.com/shorts/ThNNQYDxOLE?feature=share)
+- [FAST detection](https://www.youtube.com/shorts/ysYRykSbt78?feature=share)
+- [SLOW / NO_CAR detection](https://www.youtube.com/shorts/SpL6P7tqWLs?feature=share)
+
+**Experiment 2: Motion Pattern Classification (STRAIGHT / OSCILLATE / PAUSE)**
+- [Live demo](https://www.youtube.com/shorts/MMltPG_8UW0?feature=share)
+
+---
+  
 ## How to Deploy
 
 ### Prerequisites
