@@ -202,15 +202,17 @@ Magnetic-Vision-Teaching-AI-to-See-Motion-Without-a-Camera/
 | 2 | Pattern classification | 1D CNN on Raw Data | 76.3% | 66.67% |
 
 ## Future Work
-Multi-axis sensing: Use 3-axis magnetometers to capture richer magnetic signatures.
 
-Directional detection: Add a second Hall-effect sensor to detect motion direction.
-
-Larger datasets: Vary magnet size, orientation, speed, and distance to test generalization.
-
+- **Multi-axis sensing**: Use 3-axis magnetometers to capture richer magnetic signatures.
+- **Directional detection**: Add a second Hall-effect sensor to detect motion direction.
+- **Larger datasets**: Vary magnet size, orientation, speed, and distance to test generalization.
+- 
 ## Credits
 
-Author: Aula Jazmati Platform: Seeed Studio Wio Terminal ML Pipeline: Edge Impulse License: MIT
+**Author**: Aula Jazmati  
+**Platform**: Seeed Studio Wio Terminal  
+**ML Pipeline**: Edge Impulse  
+**License**: MIT
 
 ## Full Write-up
 
