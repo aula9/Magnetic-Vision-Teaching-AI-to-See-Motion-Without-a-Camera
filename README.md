@@ -202,3 +202,4 @@ Magnetic-Vision-Teaching-AI-to-See-Motion-Without-a-Camera/
 ## Full Write-up
 ```markdown
 [View the complete project on Hackster](https://www.hackster.io/aula-jazmati/magnetic-vision-teaching-ai-to-see-motion-without-a-camera-e76650)
+```bash
