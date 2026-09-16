@@ -133,20 +133,50 @@ The dataset consists of 86 recordings split across three classes:
 - **Window size**: 3000 ms (3 seconds at 100 Hz)
 - **Processing block**: Raw Data (full 300-sample signal)
 - **Learning block**: Classification (Keras with 1D CNN)
+  
+  ![Impulse design](images/exp2_impulse_design.png)
+  
+### Data Explorer
+
+The feature explorer shows how the three classes cluster after processing:
+
+![Data explorer](images/exp2_data_explorer.png)
 
 ### Neural Network
+
+![Neural network architecture](images/exp2_architecture.png)
+
 - Input: 300 raw samples → Reshape (300 × 1)
 - 1D Conv/Pool (4 filters, kernel 3) → 1D Conv/Pool (16 filters, kernel 3)
 - Flatten → Dense (20, ReLU) → Dropout (0.2)
 - Output: 3 classes, Softmax
 
 ### Results
+![Training results](images/exp2_training_results.png)
+
 - Validation accuracy: **76.3%**
 - Test accuracy: **66.67%**
 - Dataset: 28–29 recordings per class (86 total)
 
+  ![Test results](images/exp2_test_results.png)
+
 **Finding**: Flatten was tested first and reached only 61.5%, confirming that
 amplitude-based statistics are insufficient for temporal pattern recognition.
+
+### Deployment
+
+The model was deployed as an Arduino library using the **EON Compiler** 
+for optimized on-device performance.
+
+![Deployment](images/exp2_deployment.png)
+
+**On-device performance:**
+- Inference latency: **5 ms**
+- Peak RAM usage: **13.8 KB**
+- Flash usage: **68.5 KB**
+
+![On-device performance](images/exp2_on_device_perf.png)
+
 
 ![Data collection - STRAIGHT](images/exp2_data_collection_straight.jpg)
 ![Data collection - OSCILLATE](images/exp2_data_collection_oscillate.jpg)
