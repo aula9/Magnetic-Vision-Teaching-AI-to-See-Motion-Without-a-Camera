@@ -57,9 +57,12 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 
 ![Wio Terminal ports](images/wio_ports.jpg)
 ![Wio Terminal buttons](images/wio_buttons.jpg)
-![A1302 Sensor](images/a1302_sensor.jpg)
-![Wiring setup](images/wiring_diagram.jpg)
+![Magnetic Power Kit](images/magnetic_kit.jpg)
 
+![A1302 Sensor](images/a1302_sensor.jpg)
+
+![A1302 Sensor Pins](images/sensor_pins.jpg)
+![Wiring setup](images/wiring_diagram.jpg)
 
 ### Wiring Diagram
 
@@ -78,10 +81,28 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 - **SLOW**: Car moves slowly past the sensor.
 - **NO_CAR**: No car present near the sensor.
 
-### Processing
+### Data Collection
+
+![Python Logger Console](images/pc_logger.jpg)
+
+### Impulse Design
+
 - **Window size**: 6000 ms (6 seconds at 100 Hz)
+- **Window increase**: 3000 ms
 - **Processing block**: Flatten (extracts 7 statistical features)
 - **Learning block**: Classification (Keras)
+
+![Impulse Design](images/exp1_impulse_design.jpg)
+
+### Signal Examples
+
+![FAST raw signal](images/exp1_signal_fast.jpg)
+![NO_CAR signal](images/exp1_signal_no_car.jpg)
+![SLOW signal](images/exp1_signal_slow.jpg)
+
+### Signal Comparison
+
+![Signal Comparison](images/exp1_signals_comparison.png)
 
 ### Features Extracted by Flatten
 - Mean
@@ -102,6 +123,16 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 - Test accuracy: **100%**
 - Dataset: 10 recordings per class (30 total) → 90 windows
 
+![Training Results](images/exp1_training_results.jpg)
+![Test Results](images/exp1_test_results.jpg)
+
+### On-Device Inference
+
+![Serial Monitor - FAST 98.44%](images/exp1_inference_fast.jpg)
+
+### Deployment
+
+![Deployment Success](images/deployment_success.jpg)
 
 ![Data collection - FAST class](images/exp1_data_collection.jpg)
 ![Inference - NO_CAR](images/exp1_inference_no_car.jpg)
@@ -117,6 +148,8 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 - **OSCILLATE**: Back-and-forth movement within the window.
 - 
 ### Data Collection
+
+![Signal grid - all classes](images/exp2_signals_grid.png)
 
 Each recording lasts 3 seconds (300 samples at 100 Hz). Below are 
 examples of each class:
@@ -255,6 +288,8 @@ If you want to collect your own dataset:
 python pc_tools/logger.py
 4. Press B1 on the Wio Terminal; the data will be saved automatically
 to dataset/<CLASS>/.
+
+![Python Logger Console](images/pc_logger.jpg)
 
 ## Repository Structure
 ```
