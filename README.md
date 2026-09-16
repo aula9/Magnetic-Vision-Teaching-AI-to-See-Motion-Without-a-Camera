@@ -26,7 +26,9 @@ on a Seeed Wio Terminal.
 This project explores whether a simple **Hall-effect sensor** can capture
 enough information about a moving object for a machine-learning model to
 recognize its motion — **without any camera or computer vision**.
-![Two components. Zero cameras.](images/no_camera_drama.jpg)
+
+[Two components. Zero cameras.](images/no_camera_drama.jpg)
+
 It contains two experiments:
 - **Experiment 1**: Classify motion **speed** (FAST / SLOW / NO_CAR) —
   achieved 100% accuracy using the Flatten processing block.
