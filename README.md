@@ -286,7 +286,6 @@ python pc_tools/logger.py
 4. Press B1 on the Wio Terminal; the data will be saved automatically
 to dataset/<CLASS>/.
 
-![Python Logger Console](images/pc_logger.png)
 
 ## Repository Structure
 ```
