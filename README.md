@@ -15,12 +15,13 @@ on a Seeed Wio Terminal.
 2. [Hardware Setup](#hardware-setup)
 3. [Experiment 1: Speed Classification](#experiment-1-speed-classification)
 4. [Experiment 2: Motion Pattern Classification](#experiment-2-motion-pattern-classification)
-5. [How to Deploy](#how-to-deploy)
-6. [Repository Structure](#repository-structure)
-7. [Results Summary](#results-summary)
-8. [Future Work](#future-work)
-9. [Credits](#credits)
-10. [Links](#links)
+5. [Video Demos](#video-demos)
+6. [How to Deploy](#how-to-deploy)
+7. [Repository Structure](#repository-structure)
+8. [Results Summary](#results-summary)
+9. [Future Work](#future-work)
+10. [Credits](#credits)
+11. [Links](#links)
 
 ---
 
