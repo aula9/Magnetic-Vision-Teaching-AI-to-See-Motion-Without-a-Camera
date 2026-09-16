@@ -115,6 +115,19 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 - **STRAIGHT**: Steady movement in one direction.
 - **PAUSE**: Movement, brief pause, then continuation.
 - **OSCILLATE**: Back-and-forth movement within the window.
+- 
+### Data Collection
+
+Each recording lasts 3 seconds (300 samples at 100 Hz). Below are 
+examples of each class:
+
+![STRAIGHT signal](images/exp2_signal_straight.jpg)
+![PAUSE signal](images/exp2_signal_pause.jpg)
+![OSCILLATE signal](images/exp2_signal_oscillate.jpg)
+
+The dataset consists of 86 recordings split across three classes:
+![Dataset overview](images/exp2_dataset_overview1.jpg)
+![Dataset overview](images/exp2_dataset_overview.jpg)
 
 ### Processing
 - **Window size**: 3000 ms (3 seconds at 100 Hz)
