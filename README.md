@@ -4,8 +4,7 @@ A TinyML project using a Hall-effect sensor and Edge Impulse to classify
 motion speed and patterns — no camera required. Runs entirely on-device
 on a Seeed Wio Terminal.
 
-![Magnetic toy car](images/cover.jpg)
-
+![Wio Terminal + Edge Impulse](images/wio_edgeimpulse.jpg)
 
 ![Two components. Zero cameras.](images/no_camera_drama.png)
 ---
@@ -55,7 +54,8 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 | Magnetic toy car | 1 | Any magnet works |
 | Jumper wires | 3 | For sensor connection |
 
-![Wio Terminal](images/wio_terminal.jpg)
+![Wio Terminal ports](images/wio_ports.jpg)
+![Wio Terminal buttons](images/wio_buttons.jpg)
 ![A1302 Sensor](images/a1302_sensor.jpg)
 ![Wiring setup](images/wiring_diagram.jpg)
 
@@ -194,6 +194,8 @@ amplitude-based statistics are insufficient for temporal pattern recognition.
 2. Press **B1** on the Wio Terminal to start recording.
 3. Move the magnet/car during the recording window.
 4. The result will appear on the Wio Terminal's screen.
+
+![Magnetic toy car](images/cover.jpg)
 
 ### Step 5: PC Logger (Optional)
 
