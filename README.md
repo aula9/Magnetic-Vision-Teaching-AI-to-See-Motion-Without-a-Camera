@@ -3,6 +3,10 @@
 A TinyML project using a Hall-effect sensor and Edge Impulse to classify
 motion speed and patterns — no camera required. Runs entirely on-device
 on a Seeed Wio Terminal.
+
+![Magnetic toy car](images/cover.jpg)
+
+
 ![Two components. Zero cameras.](images/no_camera_drama.png)
 ---
 
@@ -51,6 +55,11 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 | Magnetic toy car | 1 | Any magnet works |
 | Jumper wires | 3 | For sensor connection |
 
+![Wio Terminal](images/wio_terminal.jpg)
+![A1302 Sensor](images/a1302_sensor.jpg)
+![Wiring setup](images/wiring_diagram.jpg)
+
+
 ### Wiring Diagram
 
 | A1302 Pin | Wio Terminal Pin | Notes |
@@ -92,6 +101,11 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 - Test accuracy: **100%**
 - Dataset: 10 recordings per class (30 total) → 90 windows
 
+
+![Data collection - FAST class](images/exp1_data_collection.jpg)
+![Inference - NO_CAR](images/exp1_inference_no_car.jpg)
+![Inference - SLOW](images/exp1_inference_slow.jpg)
+
 ---
 
 ## Experiment 2: Motion Pattern Classification
@@ -119,6 +133,11 @@ problems, but temporal patterns require more sophisticated modeling (1D CNN).
 
 **Finding**: Flatten was tested first and reached only 61.5%, confirming that
 amplitude-based statistics are insufficient for temporal pattern recognition.
+
+![Data collection - STRAIGHT](images/exp2_data_collection_straight.jpg)
+![Data collection - OSCILLATE](images/exp2_data_collection_oscillate.jpg)
+![Inference - PAUSE](images/exp2_inference_pause.jpg)
+![Setup photo](images/exp2_inference_setup.jpg)
 
 ---
 ## Video Demos
