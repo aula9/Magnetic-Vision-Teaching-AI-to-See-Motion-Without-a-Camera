@@ -4,7 +4,7 @@ A TinyML project using a Hall-effect sensor and Edge Impulse to classify
 motion speed and patterns — no camera required. Runs entirely on-device
 on a Seeed Wio Terminal.
 
-![Wio Terminal + Edge Impulse](images/wio_edgeimpulse.jpg)
+![Wio Terminal + Edge Impulse](images/wio_edgeimpulse.png)
 
 ![Two components. Zero cameras.](images/no_camera_drama.png)
 ---
