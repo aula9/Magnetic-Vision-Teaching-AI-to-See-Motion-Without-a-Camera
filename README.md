@@ -123,11 +123,12 @@ examples of each class:
 
 ![STRAIGHT signal](images/exp2_signal_straight.png)
 ![PAUSE signal](images/exp2_signal_pause.png)
-![OSCILLATE signal](images/exp2_signal_oscillate.png)
+
 
 The dataset consists of 86 recordings split across three classes:
 ![Dataset overview](images/exp2_dataset_overview1.png)
 ![Dataset overview](images/exp2_dataset_overview.png)
+![OSCILLATE signal](images/exp2_signal_oscillate.png)
 
 ### Processing
 - **Window size**: 3000 ms (3 seconds at 100 Hz)
